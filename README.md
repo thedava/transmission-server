@@ -29,7 +29,7 @@ transmission-create -o "/watch/ubuntu-mate-22.04.3-desktop-amd64.iso.torrent" \
 /downloads/complete/ubuntu-mate-22.04.3-desktop-amd64.iso
 ```
 
-4. Retriev magnet link for (now added) torrent file
+4. Retrieve magnet link for (now added) torrent file
 
 
 ```sh

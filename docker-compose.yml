@@ -12,6 +12,7 @@ services:
       - ./config:/config
       - "$DOWNLOADS_DIR:/downloads"
       - ./watch:/watch
+      - ./bin:/custom/bin
     ports:
       - 9091:9091
       - 51413:51413
