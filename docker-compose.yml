@@ -6,8 +6,8 @@ services:
       - PUID=1000
       - PGID=1000
       - TZ=$TZ
-      - USER=$USER
-      - PASS=$PASSWORD
+      - USER=$AUTH_USER
+      - PASS=$AUTH_PASSWORD
     volumes:
       - ./config:/config
       - "$DOWNLOADS_DIR:/downloads"

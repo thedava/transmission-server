@@ -17,9 +17,11 @@ if [ -z "${file}" ]; then
 fi
 
 # Download url
-wget -o "/downloads/complete/${file}" "${url}"
+echo "Downloading file '${file}' from url '${url}' now..."
+wget -O "/downloads/complete/${file}" "${url}"
 
 # Create torrent file in /tmp
+echo "Creating '"${file}".torrent' now"
 transmission-create -o "/tmp/${file}.torrent" \
 -t "udp://tracker.opentrackr.org:1337/announce" \
 -t "udp://open.tracker.cl:1337/announce" \
