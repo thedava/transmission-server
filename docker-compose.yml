@@ -3,11 +3,12 @@ services:
     image: lscr.io/linuxserver/transmission:latest
     container_name: transmission
     environment:
-      - PUID=1000
-      - PGID=1000
-      - TZ=$TZ
-      - USER=$AUTH_USER
-      - PASS=$AUTH_PASSWORD
+      PUID: 1000
+      PGID: 1000
+      TZ: "$TZ"
+      USER: "$AUTH_USER"
+      PASS: "$AUTH_PASSWORD"
+      TRACKERS: "$TRACKERS"
     volumes:
       - ./config:/config
       - "$DOWNLOADS_DIR:/downloads"
