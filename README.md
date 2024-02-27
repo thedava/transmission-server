@@ -52,3 +52,11 @@ make create-from-url -e URL=https://example.com/YourFile.zip
 # You can define a custom file name if necessary
 make create-from-url -e URL=https://example.com/YourFile.zip -e FILE=MyFile.zip
 ```
+
+## Clear all torrents
+
+Will delete all files from the `watch` and `downloads/complete` folder and ask before any file will be deleted. You still have to manually delete active seeds from the WebUI.
+
+```sh
+make clear
+```
